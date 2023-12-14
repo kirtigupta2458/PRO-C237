@@ -38,18 +38,7 @@
             $(".col-lg-4").remove()
             $(".col-lg-8").removeClass("col-lg-8").addClass("col-lg-12")
 
-            $("#order_table th").eq(2).html("Invoice")
-
-            $("#orders_data").find("tr").each(function () {
-                let html = `
-                    <a href="/api/download/mac.command">
-                        <button class="download-btn">
-                            Download
-                        </button>
-                    </a>
-                `
-                $(this).find("td").eq(2).html(html)
-            })
+            
         }
     </script>
 </body>
